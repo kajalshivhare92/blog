@@ -11,7 +11,7 @@ class CategoryController {
         try {
             const data = await CategoryModel.find()
             console.log(data)
-            res.render('admin/Category/display', { d: data })
+            res.render('admin/category/display', { d: data })
         } catch (error) {
             console.log(error)
         }
