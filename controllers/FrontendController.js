@@ -20,7 +20,7 @@ class FrontendController {
     static about = async (req, res) => {
         try {
             const about = await AboutModel.findOne()
-            // console.log(about)
+            console.log(about)
             res.render('about', { a: about })
         }
         catch (error) {
